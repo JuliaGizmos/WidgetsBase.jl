@@ -1,0 +1,13 @@
+name = "Widgets"
+uuid = "eead4739-05f7-45a1-878c-cee36b57321c"
+authors = ["Simon Danisch"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
