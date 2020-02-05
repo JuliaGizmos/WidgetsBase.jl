@@ -1,5 +1,14 @@
 module Widgets
 
-greet() = print("Hello World!")
+using Observables
+
+to_node(x) = Observable(x)
+to_node(x::Observable) = x
+
+abstract type AbstractWidget{T} <: Observables.AbstractObservable{T} end
+
+Observables.observe(x::AbstractWidget) = x.value
+
+include("ui_elements.jl")
 
 end # module
