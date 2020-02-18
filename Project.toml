@@ -3,6 +3,9 @@ uuid = "eead4739-05f7-45a1-878c-cee36b57321c"
 authors = ["Simon Danisch"]
 version = "0.1.0"
 
+[deps]
+Observables = "510215fc-4207-5dde-b226-833fc4488ee2"
+
 [compat]
 julia = "1"
 
