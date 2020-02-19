@@ -1,4 +1,4 @@
-module Widgets
+module WidgetsBase
 
 using Observables
 
