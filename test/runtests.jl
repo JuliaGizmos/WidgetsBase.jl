@@ -1,4 +1,4 @@
-using Widgets
+using WidgetsBase
 using Test
 
 @testset "Widgets.jl" begin
