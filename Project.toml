@@ -1,4 +1,4 @@
-name = "Widgets"
+name = "WidgetsBase"
 uuid = "eead4739-05f7-45a1-878c-cee36b57321c"
 authors = ["Simon Danisch"]
 version = "0.1.0"
