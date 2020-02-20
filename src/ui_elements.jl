@@ -36,8 +36,8 @@ end
 
 function Slider(range::T, value = first(range); kw...) where T <: AbstractRange
     Slider{T, eltype(range)}(
-        to_node(range),
-        to_node(value),
+        convert(Observable, range),
+        convert(Observable, value),
         Dict{Symbol, Any}(kw)
     )
 end
