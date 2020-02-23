@@ -65,3 +65,12 @@ function RangeSlider(range::T; value = [first(range)], kw...) where T <: Abstrac
         Observable(Dict{String, Any}()),
     )
 end
+
+struct Checkbox <: AbstractWidget{Bool}
+    value::Observable{Bool}
+    attributes::Dict{Symbol, Any}
+end
+
+function Checkbox(value::Bool; kw...)
+    return Checkbox(Observable(value), Dict{Symbol, Any}(kw))
+end

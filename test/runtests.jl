@@ -12,4 +12,7 @@ using Test
     @test number_input[] == 66
     rslider = RangeSlider(1:100; value=[10, 80])
     @test rslider[] == [10, 80]
+
+    checbkox = Checkbox(true)
+    @test checbkox[] == true
 end
