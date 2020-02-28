@@ -19,12 +19,12 @@ function TextField(value::String; kw...)
     TextField(Observable(value), Dict{Symbol, Any}(kw))
 end
 
-struct NumberInput <: AbstractWidget{Float64}
-    value::Observable{Float64}
+struct NumberInput{T<:Number} <: AbstractWidget{T}
+    value::Observable{T}
     attributes::Dict{Symbol, Any}
 end
 
-function NumberInput(value::Float64; kw...)
+function NumberInput(value::Number; kw...)
     NumberInput(Observable(value), Dict{Symbol, Any}(kw))
 end
 
