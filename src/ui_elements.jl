@@ -74,3 +74,11 @@ end
 function Checkbox(value::Bool; kw...)
     return Checkbox(Observable(value), Dict{Symbol, Any}(kw))
 end
+struct FilePicker <: AbstractWidget{String}
+    value::Observable{String}
+    attributes::Dict{Symbol, Any}
+end
+
+function FilePicker(value::String; kw...)
+    FilePicker(Observable(value), Dict{Symbol, Any}(kw))
+end

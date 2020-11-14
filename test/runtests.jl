@@ -15,4 +15,7 @@ using Test
 
     checbkox = Checkbox(true)
     @test checbkox[] == true
+
+    fp = FilePicker("text")
+    @test fp[] == "text"
 end
