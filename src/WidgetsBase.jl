@@ -11,6 +11,6 @@ Observables.observe(x::AbstractWidget) = x.value
 
 include("ui_elements.jl")
 
-export Button, Slider, RangeSlider, TextField, NumberInput, Checkbox
+export Button, Slider, RangeSlider, TextField, NumberInput, Checkbox, FilePicker
 
 end # module
