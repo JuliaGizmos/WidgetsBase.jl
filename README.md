@@ -11,6 +11,7 @@ Button("hi")
 TextField("Write!")
 NumberInput(66.0)
 RangeSlider(1:100; value=[10, 80])
+FilePicker("text")
 ```
 
 Rendering of the Widgets needs to happen in e.g. JSServe or Makie
