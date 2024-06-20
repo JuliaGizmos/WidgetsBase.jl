@@ -13,4 +13,4 @@ NumberInput(66.0)
 RangeSlider(1:100; value=[10, 80])
 ```
 
-Rendering of the Widgets needs to happen in e.g. JSServe or Makie
+Rendering of the Widgets needs to happen in e.g. Bonito or Makie
